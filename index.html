@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>calculatrice</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form id="principal_container" name="calculatrice">
+            <input id="screen" name="result">
+            <input id="output">
+            <div id="button_container">
+                <input class="button" type="button" value="9" onclick="ajouter('9')">
+                <input class="button" type="button" value="8" onclick="ajouter('8')">
+                <input class="button" type="button" value="7" onclick="ajouter('7')">
+                <input class="button" type="button" value="*" onclick="ajouter('*')">
+                <input class="button" type="button" value="6" onclick="ajouter('6')">
+                <input class="button" type="button" value="5" onclick="ajouter('5')">
+                <input class="button" type="button" value="4" onclick="ajouter('4')">
+                <input class="button" type="button" value="/" onclick="ajouter('/')">
+                <input class="button" type="button" value="3" onclick="ajouter('3')">
+                <input class="button" type="button" value="2" onclick="ajouter('2')">
+                <input class="button" type="button" value="1" onclick="ajouter('1')">
+                <input class="button" type="button" value="-" onclick="ajouter('-')">
+                <input class="button1" type="reset" value="AC">
+                <input class="button" type="button" value="0" onclick="ajouter('0')">
+                <input class="button" type="button" value="=" onclick="calcul()">
+                <input class="button2" type="button" value="+" onclick="ajouter('+')">
+            </div>
+        </form>
+        <script src="myscripts.js"></script>
+    </body>
+</html>
