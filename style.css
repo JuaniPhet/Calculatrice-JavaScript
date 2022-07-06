@@ -1,72 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: beige;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-right: 35%;
-    margin-left: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 #principal_container {
     border: solid black 5px;
     border-radius: 15px;
     padding: 5px;
-    width: 300px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
+    width: 290px;
+    height: 445px;
+    display: inline-block;
     text-align: center;
     background-color: white;
-}
-
-#screen, #output {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    border: solid black 2px;
-    width: 260px;
-    height: 35px;
-    background-color: olivedrab;
-    text-align: right;
-    font-weight: bold;
+    box-shadow: gray 0 0 90px;
 }
 
 #screen {
-    margin-top: auto;
-    border-bottom: none;
-    font-size: 1.2em;
-    border-radius: 15px 15px 0 0;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid black 2px;
+    width: 265px;
+    height: 55px;
+    font-size: 3.5em;
+    background-color: olivedrab;
+    text-align: right;
+    font-weight: bold;
+    border-radius: 15px;
+    font-family: monospace;
 }
 
-#output {
-    border-top: none;
-    font-size: 1.5em;
-    color: white;
+#screen2 {
+    display: none;
+    /* border: 1px solid black; */
 }
 
 #button_container {
-    display: flex;
-    flex-wrap: wrap;
-    /* border: solid black 2px; */
+    display: inline-block;
     margin: auto;
-    justify-content: center;
-    width: 272px;
-    /* height: 275px; */
+    width: 285px;
+    height: 390px;
 }
 
-.button, .button1, .button2 {
-    border: black solid 2px;
-    width: 62px;
-    height: 60px;
-    padding: auto;
-    margin: 3px;
+#power_button {
+    display: inline-block;
+    margin-left: 85px;
+    margin-top: 35px;
+    width: 200px;
+    height: 20px;
+}
+
+#on, #off, #del {
+    width: 55px;
+    height: 30px;
     font-size: 1.3em;
     font-weight: bold;
+    color: white;
+    border-radius: 15px 0 0 15px;
+    border: black solid 2px;
+    box-shadow: black 0 0 2px;
+    background-color: red;
+}
+
+#off {
+    border-radius: 0 15px 15px 0;
+}
+
+#del {
+    width: 60px;
+    border-radius: 0;
+}
+
+#on:hover, #off:hover, #del:hover {
+    background-color: gray;
+    color: white;
+    border: white solid 2px;
+}
+
+#on:active, #off:active, #del:active {
+    background-color: black;
+    width: 60px;
+    height: 29px;
+}
+
+#others_button {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+#numeric_button {
+    display: inline-block;
+    width: 210px;
+}
+
+#operator {
+    display: inline-block;
+    width: 70px;
+}
+
+.button, .button1 {
+    border: black solid 2px;
+    width: 58px;
+    height: 58px;
+    padding: auto;
+    margin: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: black 0 0 2px;
 }
 
 .button1 {
-    border-radius: 0 0 0 15px;
+    background-color: lightgreen;
 }
 
-.button2 {
-    border-radius: 0 0 15px 0;
+.button:hover, .button1:hover {
+    background-color: gray;
+    color: white;
+    border: white solid 2px;
+    width: 58px;
+    height: 58px;
+}
+
+
+.button:active, .button1:active {
+    background-color: black;
+    width: 58px;
+    height: 55px;
 }
