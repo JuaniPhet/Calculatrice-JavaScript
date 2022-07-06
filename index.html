@@ -7,25 +7,36 @@
     </head>
     <body>
         <form id="principal_container" name="calculatrice">
-            <input id="screen" name="result">
-            <input id="output">
+            <input type="text" id="screen" name="result" value="">
+            <input type="text" id="screen2" name="result1" value="">
             <div id="button_container">
-                <input class="button" type="button" value="9" onclick="ajouter('9')">
-                <input class="button" type="button" value="8" onclick="ajouter('8')">
-                <input class="button" type="button" value="7" onclick="ajouter('7')">
-                <input class="button" type="button" value="*" onclick="ajouter('*')">
-                <input class="button" type="button" value="6" onclick="ajouter('6')">
-                <input class="button" type="button" value="5" onclick="ajouter('5')">
-                <input class="button" type="button" value="4" onclick="ajouter('4')">
-                <input class="button" type="button" value="/" onclick="ajouter('/')">
-                <input class="button" type="button" value="3" onclick="ajouter('3')">
-                <input class="button" type="button" value="2" onclick="ajouter('2')">
-                <input class="button" type="button" value="1" onclick="ajouter('1')">
-                <input class="button" type="button" value="-" onclick="ajouter('-')">
-                <input class="button1" type="reset" value="AC">
-                <input class="button" type="button" value="0" onclick="ajouter('0')">
-                <input class="button" type="button" value="=" onclick="calcul()">
-                <input class="button2" type="button" value="+" onclick="ajouter('+')">
+                <div id="power_button">
+                    <button id="on" type="button" value="ON" onclick="turn_on()">ON</button>
+                    <button id="del" type="button" value="del" onclick="toDelete()">DEL</button>
+                    <button id="off" type="button" value="OFF" onclick="turn_off()">OFF</button>
+                </div>
+                <div id="others_button">
+                    <div id="numeric_button">
+                        <button class="button" type="button" value="9" onclick="ajouter('9')">9</button>
+                        <button class="button" type="button" value="8" onclick="ajouter('8')">8</button>
+                        <button class="button" type="button" value="7" onclick="ajouter('7')">7</button>
+                        <button class="button" type="button" value="6" onclick="ajouter('6')">6</button>
+                        <button class="button" type="button" value="5" onclick="ajouter('5')">5</button>
+                        <button class="button" type="button" value="4" onclick="ajouter('4')">4</button>
+                        <button class="button" type="button" value="3" onclick="ajouter('3')">3</button>
+                        <button class="button" type="button" value="2" onclick="ajouter('2')">2</button>
+                        <button class="button" type="button" value="1" onclick="ajouter('1')">1</button>
+                        <button class="button" type="button" value="0" onclick="ajouter('.')">.</button>
+                        <button class="button" type="button" value="0" onclick="ajouter('0')">0</button>
+                        <button class="button1" type="button" value="=" onclick="ajouter('=')">=</button>
+                    </div>
+                    <div id="operator">
+                        <button class="button" type="button" value="+" onclick="ajouter('+')">&plus;</button>
+                        <button class="button" type="button" value="-" onclick="ajouter('-')">&minus;</button>
+                        <button class="button" type="button" value="*" onclick="ajouter('*')">&times;</button>
+                        <button class="button" type="button" value="/" onclick="ajouter('/')">&div;</button>
+                    </div>
+                </div>
             </div>
         </form>
         <script src="myscripts.js"></script>
